@@ -1,11 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
-.navbar {
+.navbar , .navbar-scrolled {
   min-height: 70px;
   width: 100%;
   /* background-color: #09090A; */
-  background-color: white;
+  background-color:var(--text-color);
+  /* border-bottom: 1px solid black; */
 }
+
 
 .logo img{
   width: 180px;
@@ -31,23 +33,35 @@
   font-size: 16px;
   font-weight: 400;
   text-decoration: none;
-  color: rgb(114, 114, 114);
+  color:var(--paragraph-color);
   transition: all 0.2s ease-in;
   padding: 10px 0px;
   margin: 0 10px;
 }
 
 .nav-elements ul a:hover {
-  color: black;
-  box-shadow: inset 0px -3px 0px #ff9100;
+  color: var(--primary-color);
+  box-shadow: inset 0px -3px 0px var(--primary-color);
+}
+.navbar-scrolled .nav-elements ul a:hover{
+  box-shadow: inset 0px -3px 0px black;
+
+  
 }
 
 
 .nav-elements ul a.active {
   /* color: white; */
-  color: black;
+  color: var(--primary-color);
   /* font-weight: 600; */
-  box-shadow: inset 0px -3px 0px #ff9100;
+  box-shadow: inset 0px -3px 0px var(--primary-color);
+
+}
+.navbar-scrolled .nav-elements ul a.active{
+  color: black;
+
+  box-shadow: inset 0px -3px 0px black;
+  
 
 }
 
@@ -89,11 +103,18 @@
 #login-nav-btn{
   /* border: 1px solid white; */
   padding: 6px 24px;
-  background-color: #ffae42;
+  background-color: var(--primary-color);
   cursor: pointer;
 }
+.navbar-scrolled #login-nav-btn{
+  background-color: black;
+ 
+}
 #login-nav-btn a{
-  color: black;
+  color: white;
+}
+.navbar-scrolled #login-nav-btn a{
+  color: white;
 }
 .nav-list-icons{
   display: flex;
@@ -135,7 +156,7 @@
 
 @media (max-width: 1168px) {
   .navbar{
-    background-color: #f0f0f0;
+    background-color: var(--text-color);
   }
   .menu-icon {
     display: block;

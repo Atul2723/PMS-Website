@@ -1,0 +1,27 @@
+.sme-details-section{
+    padding-top: 5%;
+    background-color: #f9f9f9;
+}
+.sme-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sme-img{
+    display: flex;
+    justify-content: center;
+}
+.sme-img img{
+    width: 80%;
+
+}
+.sme-details h1{
+    font-size: 60px;
+    margin-bottom: 2%;
+
+}.sme-details ol{
+    margin: 2% 2%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

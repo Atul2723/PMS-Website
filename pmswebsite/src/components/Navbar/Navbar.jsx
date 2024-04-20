@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useState } from 'react'
 import './Navbar.css'
 import { NavLink } from 'react-router-dom'
@@ -11,12 +11,13 @@ import Hamburger from './Hamburger'
 const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(false);
 
+
   const handleShowNavbar = () => {
     setShowNavbar(!showNavbar);
   };
   return (
     <>
-      <nav style={{ position: "fixed",zIndex:'20' , paddingLeft:'5%', paddingRight:"5%" }} className="navbar">
+      <nav style={{ position: "fixed",zIndex:'20' , paddingLeft:'5%', paddingRight:"5%" }} className='navbar'>
         <div className="container-fluid">
           <div className="logo">
             <img src='/nnmlogo.png'/> 
@@ -30,7 +31,7 @@ const Navbar = () => {
                 <NavLink to="/">Home</NavLink>
               </li>
               <li>
-                <NavLink to="/about">About</NavLink>
+                <NavLink to="/fund-details">Fund Details</NavLink>
               </li>
               {/* <li>
                 <a style={{color:"rgb(188,188,188"}}>About</a> <IoIosArrowDown style={{ color: "grey", cursor: "pointer" }} />
@@ -42,10 +43,10 @@ const Navbar = () => {
                 </ul>
               </li> */}
               
-              <li><NavLink to="/blog">Blog</NavLink></li>
+              <li><NavLink to="/sme">What Is SME ?</NavLink></li>
  
               <li>
-              <NavLink to="/contact">Products</NavLink>
+              <NavLink to="/contact">Case Studies</NavLink>
               </li>
               <li id='login-nav-btn'>
               <NavLink to="/login" style={{boxShadow:'none'}}>Contact Us</NavLink>

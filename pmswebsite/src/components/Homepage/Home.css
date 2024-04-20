@@ -1,6 +1,8 @@
+
+
 .pms-home{
     min-height: 60vh;
-    background-color: #f8f9f9;
+    background-color: var(--primary-color);
     padding-top: 8%;
     padding-bottom: 4%;
 }
@@ -17,25 +19,42 @@
 .home-img img{
     width: 100%;
 }
-.home-col h1{
-    font-size: 55px;
+/* .home-col h1{
+    font-size: 50px;
+    
 }
 .home-col p{
     font-size: 18px;
     text-align: justify;
+} */
+
+.home-col h3{
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--text-color);
+}
+.home-col h1{
+    font-size: 45px;
+    /* letter-spacing: 2px; */
+    /* word-spacing: 3px; */
+    color:var(--text-color);
 }
 .home-col button{
     width: 30%;
     padding: 2% 3%;
     border: none;
     outline: none;
-    background-color: #ffae42;
+    background-color: black;
+    color:var(--text-color);
 }
 .pms-organization{
     padding-bottom:2%;
+    background-color: var(--primary-color);
+    color:var(--text-color);
 }
 .pms-about-section{
-    padding-bottom: 7%;
+    /* padding-bottom: 7%; */
     padding-top: 5%;
     background: url('../../../public/pmscompanybackgrounc.png');
 }
@@ -50,7 +69,7 @@
     letter-spacing: 5px;
 }
 .pms-about-heading p{
-    color: rgb(98, 98, 98);
+    color: var(--paragraph-color);
 }
 .product-row{
     display: flex;
@@ -68,7 +87,7 @@
     list-style: none;
     justify-content: space-around;
     /* align-items: center; */
-    border-left: 2px solid black;
+    border-left: 2px solid var(--text-color);
 }
 .product-col ul li{
     font-size: 20px;
@@ -100,20 +119,23 @@
     flex-wrap: nowrap;
 }
 .company-col:not(:last-child){
-    border-right: 0.5px solid rgb(203, 203, 203);
+    border-right: 0.5px solid var(--paragraph-color);
 }
 
 .company-icon{
     font-size: 70px;
-    color: #ffae42;
+    color: var(--primary-color);
 }
 .company-col p{
     text-align: center;
-    color: rgb(61, 61, 61);
+    color: var(--paragraph-color);
+    
 }
 .vision-mission{
     background: url('../../../public/visionbg.png');
     background-size: cover;
+    padding-top: 4%;
+    padding-bottom: 2%;
 }
 .vision-row{
     display: flex;
@@ -137,7 +159,7 @@
 .vision-icons{
     font-size: 5rem;
     border-radius: 50px;
-    color: #ffae42;
+    color: var(--primary-color);
 }
 .vision-content{
     display: flex;
@@ -145,5 +167,433 @@
     gap: 10px;
 }
 .vision-content p{
-    color: rgb(118, 118, 118);
+    color: var(--paragraph-color);
+}
+.pms-team{
+    /* padding: 5% 0; */
+    padding-bottom: 5%;
+    margin-top: 5%;
+    /* background-color: #f8f9f9; */
+}
+.team-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* height: 100vh; */
+    /* gap: 20px; */
+    flex-wrap: nowrap;    
+}
+
+.team-card{
+    padding: 0;
+    /* padding: 2%;    */
+    display: flex;   
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;  
+}
+.team-card img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border:10px solid var(--primary-color);
+
+}
+
+.team-card .team-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    /* padding-top: 2%; */
+}
+.team-details{
+    padding: 0;
+    text-align: center;
+    /* border: 1px solid black; */
+    
+}
+.team-details h3{
+    margin-top: 1%;  
+}
+.team-details h5{
+    color:var(--primary-color);
+    font-size: 18px;
+    font-style: italic;
+    width: 80%;
+    margin: 7px auto;
+}
+.team-details p{
+    text-align: center;
+    color:var(--paragraph-color);
+}
+.team-details button{
+    background-color: var(--primary-color);
+    padding: 2% 4%;
+    border: none;
+    outline: none;
+    margin: 5% auto;
+    width: 50%;
+    
+}
+.team-icons{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 20px;
+    margin-top: 3%;
+    color: var(--paragraph-color);
+   
+}
+.team-icons .icons{
+    transition: .3s all;
+    cursor: pointer;
+}
+.team-icons .icons:hover{
+    color: var(--primary-color);
+
+}
+.pms-about-us{
+    padding: 5% 0;
+}
+.about-us-row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.about-us-col .img-col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.details-col{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.about-us-col h3{
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: var(--primary-color);
+}
+.about-us-col h5{
+    font-size: 35px;
+}
+
+.about-us-col img{
+    width: 100%;
+}
+.about-us-col p{
+    color:var(--paragraph-color);
+    text-align: justify;
+}
+.fund-details{
+    padding: 5% 0;
+    background-color: #f9f9f9;
+}
+.fund-row{
+    display: flex;
+    align-items: center;
+    margin-top: 5%;
+    justify-content: center;
+}
+.fund-col{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    row-gap: 40px;
+    
+}
+
+.fund-left{
+    width: 21%;
+    margin: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    /* padding-bottom: 8%; */
+    
+}
+.fund-left p{
+    text-align: center;
+    width: 60%;
+    color: var(--paragraph-color);
+}
+.fund-left h1{
+    text-align: center;
+    font-size: 25px;
+}
+.fund-icons{
+    font-size: 60px;
+    color: var(--primary-color);
+}
+.fund-btn{
+    width: 12%;
+    margin-top: 5%;
+    padding: 10px 0;
+    text-align: center;
+    border: none;
+    background-color: var(--primary-color);
+    color:var(--text-color);
+    outline: none;
+}
+.custom-accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.accordion-item {
+    border: 1px solid black;
+    box-shadow: 1px 1px 2px black;
+}
+
+.custom-accordion :focus {
+    outline: 0 !important;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #edede8;
+    color: black;
+    border: none;
+    outline: none;
+}
+.accordion-button:is(.collapsed){
+    background-color: #f8f9f9;
+}
+
+.philosophy-col img{
+    width: 100%;
+}
+.pms-philosophy{
+    padding: 1% 0;
+}
+.philosophy-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.philosophy-col h3{
+    margin-bottom: 5%;
+}
+.philosophy-col ul{
+    display:flex;
+    flex-direction: column;
+    gap: 15px;
+    height: 40vh;
+    overflow-y: scroll;
+}
+.philosophy-col ul li{
+    font-size: 15px;
+    list-style: none;
+    
+
+}
+.philosophy-icons{
+    font-size: 20px;
+    margin-right: 2%;
+    color: var(--primary-color);
+}
+.why-choose-us{
+    padding: 2% 0;
+    background-color: var(--primary-color);
+    color:white;
+
+}
+.chooseus-img img{
+  width: 90%;
+}
+.chooseus-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.chooseus-details{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.chooseus-details h1{
+    text-transform: capitalize;
+}
+.chooseus-details ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    /* background-color: #ffae42; */
+    /* padding: 5% 0; */
+    padding-top: 2%;
+    
+}
+.chooseus-details ul li{
+    color: rgb(195, 195, 195);
+    /* font-style: italic; */
+    font-size: 14px;
+    text-align: justify;
+}
+.chooseus-details ul li strong{
+    color:var(--text-color);
+    font-style: normal;
+    font-size: 16px;
+}
+.choose-icons{
+    margin-right: 10px;
+    color:var(--text-color);
+    font-size: 25px;
+
+}
+
+.how-col{
+    display: flex;
+    justify-content: center;
+}
+.how-col img{
+    width:80%
+}
+.how-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5%;
+}
+
+@media screen and (max-width:800px) {
+    .home-col{
+        padding: 35% 7%;
+        padding-bottom: 20%;
+    }
+    .home-col h1{
+        font-size: 30px;
+    }
+    .home-col h3{
+        font-size: 12px;
+    }
+    .home-col button{
+        width: 50%;
+    }
+    .home-col{
+        gap: 20px;
+    }
+    .home-img img{
+        width: 90%;
+        padding-bottom: 20%;
+    }
+    .company-row{
+        flex-direction: column;
+        gap: 20px;
+        margin: 0;
+        
+    }
+    .company-col{
+        flex-direction: column;
+        height: 35vh;
+    }
+    .company-col:not(:last-child){
+        border-right: none;
+    }
+    .product-col ul{
+        flex-direction: column;
+    }
+    .pms-about-us{
+        padding: 20% 0;
+    }
+    .about-us-row{
+        flex-direction: column;
+        padding: 0 5%;
+    }
+    .about-us-row h5{
+        font-size: 10px;
+    }
+    .product-col{
+        padding: 5% 0;
+        text-align: center;
+        flex-wrap: wrap;
+        width: 100%;
+        padding-bottom: 10%;
+    }
+    .product-col h1{
+        margin: auto;
+        padding-top: 10%;   
+    }
+    .product-col ul{
+        gap: 40px; 
+        margin: 0;
+        padding: 0;
+        padding-bottom: 10%;
+    }
+    .vision-mission{
+        padding: 20% 0;
+    }
+    .vision-col{
+        justify-content: center;
+        align-items: center; 
+        
+    }
+    .vision-inner-col{
+        gap: 5px;
+        padding:0  5%;
+        flex-direction: column;
+        align-items: start;
+    }
+    .vision-inner-col h1{
+        margin-top: 5%;
+    }
+    .vision-col img{
+        padding-bottom: 10%;
+    }
+    .vision-icons{
+        font-size: 50px;
+    }
+    
+    .fund-col{
+        flex-direction: column;
+        width: 100%;
+    }
+    .fund-col p{
+        width: 100%;
+    }
+    .fund-left{
+        width: 100%;
+    }
+    .fund-btn{
+        width: 40%;
+        margin-top: 10%;
+        margin-bottom: 20%;
+    }
+    .chooseus-row{
+        flex-direction: column;
+    }
+    .chooseus-img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .chooseus-details{
+        padding: 0 5%;
+        margin-top: 10%;
+        padding-bottom: 20%;
+    }
+    .team-details{
+        margin-top: 10%;
+        padding: 0 7%;
+    }
+    .team-details h5{
+        font-size: 15px;
+    }
+    .team-details p{
+        font-size: 12px;
+
+    }
+    
+    
 }
