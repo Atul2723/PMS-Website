@@ -10,7 +10,7 @@ const Fund = () => {
             <div className='container'>
                 <div className='section-heading'>
                     <h1>Fund Details</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla veniam animi cum culpa aperiam tenetur similique corrupti neque labore sit!</p>
+                    <p> At NNM Amritkaal Emerging Fund, we offer an unparalleled investment opportunity designed to maximize returns and foster long-term growth</p>
                 </div>
                 <div className='row fund-row '>
                     <div className='col-lg-12 fund-col '>

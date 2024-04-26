@@ -4,6 +4,7 @@ import { NavLink } from 'react-router-dom'
 import { IoRemoveOutline } from "react-icons/io5";
 import { MdArrowCircleLeft, MdArrowCircleRight } from 'react-icons/md';
 import { BiRightArrowCircle } from 'react-icons/bi';
+import PmsHome from '../Homepage/PmsHome';
 
 const FundDetails = () => {
     const [isActive, setActive] = useState('Investment-Details')
@@ -17,13 +18,12 @@ const FundDetails = () => {
         <>
             <div className='section-fund-details'>
                 <div className='sec-fund-header'>
-                    <h1>NNM Amritkal Emerging Fund Details</h1>
-                    <p>NM Amritkaal Emerging Fund is a new offering from the NNM Group, which is more than 70 years old financial vintage powerhouse.</p>
-                    <button className='fund-sec-btn'>Contact Us Now</button>
+                   
+                  <PmsHome heading='Fund Details' subHeading='Empowering Investors with a Comprehensive Portfolio of Financial Services' img='/funddetails.png' buttonText='Contact Us'/>
                 </div>
                 <div className='section-heading'>
                     <h1>Fund Details</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, iure!</p>
+                    <p>We Offer An Unparalleled Investment Opportunity Designed To Maximize Returns And Foster Long-Term Growth</p>
                 </div>
                 <div className='row sec-fund-row'>
                     <div className='col-lg-4 sec-fund-col'>
@@ -49,7 +49,7 @@ const FundDetails = () => {
                             isActive === 'Investment-Details' ? (<>
                                 <FundDescription heading='Investment Focus' paragraph='The fund aims to seize opportunities of investing in emerging companies listed on BSE SME, NSE Emerge and other Multicap companies on the Main Board. ' />
                                 <FundDescription heading='Investment Approach' paragraph='Two-tier selection approach:Selection Committee (for identifying and proposing emerging opportunities)Investment Approval Committee (Vetting proposals tabled by the Selection Committee and taking final decisions)' />
-                                <FundDescription heading='Investment Focus' paragraph='The fund aims to seize opportunities of investing in emerging companies listed on BSE SME, NSE Emerge and other Multicap companies on the Main Board. ' />
+                                <FundDescription heading='Investment Objective' paragraph='Companies that are well-managed, scalable and with strong governance generate superior returns. NNM AEF strives to achieve long-term capital appreciation by primarily investing in such companies in India that are SME listed or To-be listed in near term.  ' />
 
                             </>) :
                                 isActive === 'Fund-Details' ? (<>
@@ -88,27 +88,27 @@ const FundDetails = () => {
                     </div>
                 </div>
 
-              
+
             </div>
 
             <div className='pms-risks'>
-                    <div className='container'>
-                        <div className='row risk-row'>
-                            <div className='col-lg-5 risk-col-img'>
-                                <img src='/risksvg.svg'/>
-                                
-                            </div>
-                            <div className='col-lg-7 risk-col'>
-                                <h3>Risks</h3>
-                                <ul>
-                                    <li><MdArrowCircleRight className='desc-icon' />SMEs are typically very early in their lifecycles when they hit the primary markets. While this appears to give investors an early opportunity to pick potential multibaggers in SME IPOs, it also comes with the risk of losing money if the fundamentals aren't strong or the business deteriorates in the future. Needless to say, this is a dangerous combination that has a two-edged sword. </li>
-                                    <li><MdArrowCircleRight className='desc-icon' />SME IPOs have faced liquidity challenges, but several of these share-sales outperformed mainboard listings over a period.</li>
-                                    <li><MdArrowCircleRight className='desc-icon' />There are always risks in applying to IPOs, and you should always research the company prior to applying to their SME IPO. However, SME IPOs can provide good returns if they have high growth potential and are fundamentally strong.</li>
-                                </ul>
-                            </div>
+                <div className='container'>
+                    <div className='row risk-row'>
+                        <div className='col-lg-5 risk-col-img'>
+                            <img src='/risksvg.svg' />
+
+                        </div>
+                        <div className='col-lg-7 risk-col'>
+                            <h3>Risks</h3>
+                            <ul>
+                                <li><MdArrowCircleRight className='desc-icon' />SMEs are typically very early in their lifecycles when they hit the primary markets. While this appears to give investors an early opportunity to pick potential multibaggers in SME IPOs, it also comes with the risk of losing money if the fundamentals aren't strong or the business deteriorates in the future. Needless to say, this is a dangerous combination that has a two-edged sword. </li>
+                                <li><MdArrowCircleRight className='desc-icon' />SME IPOs have faced liquidity challenges, but several of these share-sales outperformed mainboard listings over a period.</li>
+                                <li><MdArrowCircleRight className='desc-icon' />There are always risks in applying to IPOs, and you should always research the company prior to applying to their SME IPO. However, SME IPOs can provide good returns if they have high growth potential and are fundamentally strong.</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
+            </div>
         </>
     )
 }

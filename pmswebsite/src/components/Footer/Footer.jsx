@@ -3,6 +3,8 @@ import React from 'react';
 import { FaPhone, FaEnvelope } from 'react-icons/fa';
 import { MdLocationOn } from 'react-icons/md';
 import './Footer.css';
+import { NavLink } from 'react-router-dom';
+import { BiMobileAlt, BiSolidMobile } from 'react-icons/bi';
 
 const Footer = () => {
   return (
@@ -19,38 +21,44 @@ const Footer = () => {
       
       <div className="footer-container">
         
-        <div className="column">
+        <div className="column logo-column">
           {/* <h4>Disclaimer</h4>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed malesuada faucibus ex nec ultricies.</p> */}
           <img src='/nnmlogo.png'/>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, rerum!</p>
+          <p> At NNM, we believe in fostering long-term relationships built on trust, transparency, and mutual success. <em>Discover the difference with NNM today !!</em></p>
         </div>
         <div className="column">
           <h4>Navigation Links</h4>
           <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/services">Services</a></li>
-            <li><a href="/contact">Contact</a></li>
+            <li><NavLink to="/">Home</NavLink></li>
+            <li><NavLink to="/fund-details">Fund Details</NavLink></li>
+            <li><NavLink to="/how-we-do-it">How We Do It</NavLink></li>
+            <li><NavLink to="/sme">What is SME</NavLink></li>
+            <li><NavLink to="/case-studies">Case Studies</NavLink></li>
+            <li><NavLink to="/contact-us">Contact Us</NavLink></li>
           </ul>
         </div>
         <div className="column">
           <h4>Contact Us</h4>
           <div className="contact-info">
             <div>
-              <MdLocationOn className="icon" /> 123 Street, City, Country
+              <MdLocationOn className="icon" /> B - 6 & 7, Plot No. 31, Shri Siddhivinayak Plaza, 2nd Floor,C.T. No. 602, Village Oshiwara, Off Link Road,  Andheri (West), Mumbai – 400058
+
             </div>
             <div>
-              <FaPhone className="icon" /> +123456789
+              <FaPhone className="icon" /> 022 4079 0011/48
             </div>
             <div>
-              <FaEnvelope className="icon" /> example@example.com
+              <BiSolidMobile className="icon" /> +91 97688006000
+            </div>
+            <div>
+              <FaEnvelope className="icon" /> nikunj@nnmsecurties.com
             </div>
           </div>
         </div>
       </div>
       <div className="copyright">
-        <p>&copy; 2024 Your Company. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} nnmsecurties. All rights reserved.</p>
       </div>
     </footer>
     

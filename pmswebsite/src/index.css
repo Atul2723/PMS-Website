@@ -71,6 +71,12 @@ p {
   background-color: var(--primary-color);
   border-radius: 10px;
 }
+.sweet-loading{
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
 
 @media screen and (max-width:800px) {
   .section-heading{

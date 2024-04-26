@@ -33,6 +33,9 @@ const Navbar = () => {
               <li>
                 <NavLink to="/fund-details">Fund Details</NavLink>
               </li>
+              <li>
+              <NavLink to="/how-we-do-it">How We Do It?</NavLink>
+              </li>
               {/* <li>
                 <a style={{color:"rgb(188,188,188"}}>About</a> <IoIosArrowDown style={{ color: "grey", cursor: "pointer" }} />
                 <ul className='dropdown-menu'>
@@ -46,10 +49,11 @@ const Navbar = () => {
               <li><NavLink to="/sme">What Is SME ?</NavLink></li>
  
               <li>
-              <NavLink to="/contact">Case Studies</NavLink>
+              <NavLink to="/case-studies">Case Studies</NavLink>
               </li>
+              
               <li id='login-nav-btn'>
-              <NavLink to="/login" style={{boxShadow:'none'}}>Contact Us</NavLink>
+              <NavLink to="/contact-us" style={{boxShadow:'none'}}>Contact Us</NavLink>
               </li>
               {/* <li className='nav-list-icons'>
                 <FaLinkedin className='n-icons'/>

@@ -63,6 +63,7 @@
 }
 .disclaimer-details p{
     font-size: 13px;
+    text-align: justify;
     
 }
 .column h4::after {
@@ -71,7 +72,7 @@
     bottom: -10px;
     left: 0;
     width: 20%;
-    height: 2px;
+    height:3px;
     background-color: white;
 }
 
@@ -106,6 +107,7 @@
 .icon {
     margin-right: 10px;
     color: white;
+    font-size: 18px;
 }
 
 /* Copyright section */
@@ -118,4 +120,46 @@
 
 .footer .copyright p {
     font-size: 14px;
+}
+
+@media screen and (max-width:768px){
+    .disclaimer{
+        padding: 10% 7%;
+    }
+    .disclaimer-details h4{
+        margin-bottom: 6%;
+    }
+    .disclaimer-details h4::after{
+        width: 25%;
+        top: 10%;
+    }
+    
+    .disclaimer-details{
+        display: flex;
+        gap: 25px;
+    }
+    .disclaimer-details p{
+        font-size: 12px;
+    }
+    .footer-container{
+        flex-direction: column;
+    }
+    .footer-container .column{
+        padding: 0;
+        padding: 4% 2%;
+        margin: 0;
+    }
+    .footer-container .logo-column{
+        margin-top: 4%;
+    }
+    .column h4::after {
+        content: '';
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        width: 100px;
+        height:3px;
+        background-color: white;
+    }
+    
 }
