@@ -23,8 +23,8 @@ const PmsHomeSlider = () => {
             },
         }}
         style={{
-            paddingBottom: "80px", "--swiper-pagination-color": "var(--text-color)",
-            "--swiper-pagination-bullet-inactive-color": "#999999",
+            paddingBottom: "80px", "--swiper-pagination-color": "black",
+            "--swiper-pagination-bullet-inactive-color": "gray",
             "--swiper-pagination-bullet-inactive-opacity": "1",
             "--swiper-pagination-bullet-size": "15px",
             "--swiper-pagination-bullet-horizontal-gap": "6px"
@@ -40,7 +40,7 @@ const PmsHomeSlider = () => {
 
 
             <SwiperSlide className='swiper-slides '>
-                <PmsHome heading='Introducing NNM Amritkaal Emerging Fund' subHeading="Empowering Investors with a Comprehensive Portfolio of Financial Services" img='/homeslide2.svg' buttonText='Explore More'/>
+                <PmsHome heading='Welcome to NNM Wealth Management' subHeading="Achieve your financial goals with personalized solutions tailored to your needs." img='/homeslide2.svg' buttonText='For a Consultation Contact Us'/>
 
 
             </SwiperSlide>

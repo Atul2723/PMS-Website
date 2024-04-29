@@ -24,7 +24,7 @@ const AshapuraChart = () => {
         },
         stroke:'#921E31',
         marker:{
-          fill:'#921E31'
+          fill:'#921e31'
         }
        
       }

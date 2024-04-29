@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -47,11 +49,28 @@ p {
   text-transform: capitalize;
   text-align: center;
   margin-top: 1%;
+  position: relative;
+  
+
+
 }
 .section-heading h1{
   font-size: 24px;
   text-transform: uppercase;
   letter-spacing: 5px;
+  margin-bottom: 4%;
+ 
+}
+.section-heading::after{
+  content: '';
+  position: absolute;
+  width: 10%;
+  height: 3px;
+  background-color: var(--primary-color);
+  top: 34%;
+  left: 45%;
+  
+  
 }
 .section-heading p{
   color: rgb(98, 98, 98);

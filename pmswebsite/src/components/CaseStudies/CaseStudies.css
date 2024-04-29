@@ -8,7 +8,7 @@
 }
 .case-row{
     display:flex;
-    align-items: center ;
+    align-items: center;
 }
 .case-col{
     display: flex;
@@ -20,10 +20,11 @@
     justify-content: center;
 }
 .case-col h1{
-    font-size: 70px;
+    font-size: 50px;
 }
 .case-col p{
     color: var(--paragraph-color);
+    text-align: justify;
 }
 .case-col-img img{
     width: 80%;
@@ -31,6 +32,20 @@
 .study-companies{
     display: flex;
     justify-content: center;
+}
+.case-study-col{
+    position: relative;
+}
+.nnm-exit{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    z-index: 10;
+    top: 30px;
+    left: 49%;
+    border: 2px solid #921e31;
+    padding: 2%;
+    border-radius: 50%;
 }
 .study-companies ul{
     width: 100%;
@@ -46,7 +61,10 @@
     cursor: pointer;
     transition: .3s all;
     border-right: 1px soid#921E31;
+    font-family: 'unna';
+    font-size: 18px;
 }
+
 .study-companies ul li:hover{
     box-shadow: inset 0px -3px #921E31;
     color: #921E31;
@@ -148,6 +166,7 @@
     gap: 10px;
     margin-top: 2%;
     color: var(--dark-bg-paragraph-color);
+    text-align: justify;
 }
 .comparison-col{
     display: flex;
@@ -192,6 +211,19 @@
     font-size: 30px;
     color: #921E31;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.comparison-box p{
+    font-family: 'unna';
+}
+.case-study-details ul{
+    text-align: justify;
+}
+@media screen and (max-width:1280px) {
+    .comparison-box p{
+        font-size: 13px;
+        
+    }
+    
 }
 
 @media screen and (max-width:768px){
@@ -244,16 +276,20 @@
     .study-companies ul{
         flex-wrap: wrap;
         gap: 20px;
-        margin-bottom: 13%;
-        
-        
+        margin-bottom: 13%;  
     }
     .case-study-details{
         padding: 3% 4%;
         padding-bottom: 20%;
     }
+    .case-study-details ul{
+        font-size: 14px;
+    }
     table{
         font-size: 14px;
+    }
+    .nnm-exit{
+        left: 40%;
     }
 
     

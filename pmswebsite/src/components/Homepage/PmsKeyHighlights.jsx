@@ -7,10 +7,10 @@ const PmsKeyHighlights = () => {
                 <div className='container'>
                     <div className='row product-row '>
                         <div className='col-lg-2 product-col'>
-                            <h1> Highlights</h1>
+                            <h1  data-aos='fade-up'  data-aos-delay="100"> Highlights</h1>
                         </div>
                         <div className='col-lg-10 product-col'>
-                            <ul>
+                            <ul  data-aos='fade-up'  data-aos-delay="100">
                                 <li><strong>20+ Years</strong><br />of Experience in Wealth <br />Management</li>
                                 <li><strong>80+ IPO's</strong><br />Experience of assisting in one<br /> or the other
                                     capacity</li>

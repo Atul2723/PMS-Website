@@ -3,6 +3,38 @@
     padding-top: 4%;
    
 }
+.fund-details-home{
+    background: url('/wealthpublic.png');
+    padding-top: 7%;
+    background-size: cover;
+    min-height: 100vh;
+}
+.fund-details-home .home-row img{
+    width: 80%;
+}
+.fund-details-heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding: 5%; */
+}
+.fund-details-heading h1{
+    font-size: 25px ;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 3%;
+    position: relative;
+}
+.fund-details-heading h1::after{
+  content: '';
+  position: absolute;
+  width: 80px;
+  height: 3px;
+  background-color: var(--primary-color);
+  top: 40px;
+  left: 70px;
+}
 .sec-fund-row{
     
     padding-top: 3%;
@@ -93,6 +125,9 @@
     align-items: center;
     color: gray;
 }
+.sec-fund-col ul li a{
+    font-family: 'unna';
+}
 .sec-fund-col ul li .fund-icon{
     font-size: 20px;
 }
@@ -122,17 +157,17 @@
     flex-direction: column;
     gap: 30px;
     justify-content: center;
+    text-align: justify;
+    
 }
-.pms-risks{
-    /* padding: 1% 0; */
-}
+
 .risk-row{
     display: flex;
     justify-content: center;
     align-items: center;
     /* background-color: rgb(244, 244, 244); */
     /* box-shadow: 1px 2px 5px gray; */
-    margin: 2% 0;
+    /* margin: 2% 0; */
 }
 .risk-col{
     display: flex;
@@ -150,11 +185,28 @@
     text-align: justify;
     font-size: 15px;
 }
-.risk-col h3{
-    margin-bottom: 3%;
+
+
+.risk-heading {
+    display: flex;
+    justify-content: center;
+
+}
+.risk-heading h3{
     text-transform: uppercase;
     letter-spacing: 4px;
-    font-size: 21px;
+    font-size: 22px;
+    position: relative;
+
+}
+.risk-heading h3::after{
+    content: '';
+    position: absolute;
+    width: 70px;
+    height: 3px;
+    background-color: var(--primary-color);
+    top: 35px;
+    left: 70px;
 }
 .risk-col-img{
     display: flex;
@@ -182,8 +234,16 @@
    .sec-fund-col ul{
     gap: 10px;
    }
+   
    .sec-fund-description{
     padding: 10% 7%;
+   }
+   .sec-fund-description ul{
+     font-size: 14px;
+   }
+   .sec-fund-description p{
+     text-align: justify;
+     font-size: 14px;
    }
    .pms-risks{
      padding: 0;
@@ -196,9 +256,39 @@
    .pms-risks ul{
     gap: 30px;
    }
+   .pms-risks ul li{
+    text-align: justify;
+    font-size: 14px;
+   }
    .sec-fund-row{
     width: 100%;
     margin: 0;
    }
-   
+   .fund-details-heading{
+    margin: 10% 5%;
+    text-align: center;
+   }
+   .fund-details-heading h1{
+    margin-bottom: 7%;
+    font-size: 18px;
+
+   }
+   .fund-details-heading h1::after{
+    left: 50px;
+    top: 30px;
+   }
+   .fund-details-heading p{
+    font-size: 15px;
+   }
+   .risk-heading h3{
+    font-size: 18px;
+   }
+
+   .risk-heading h3::after{
+    left: 55px;
+    top: 30px;
+   }
+   .risk-col{
+    padding: 0 7%;
+   }
 }

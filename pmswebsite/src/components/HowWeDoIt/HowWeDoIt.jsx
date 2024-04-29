@@ -11,18 +11,18 @@ const HowWeDoIt = () => {
                 <div className='container'>
                     <div className='row timeline-heading-row'>
                         <div className='col-lg-6 timeline-heading-details'>
-                            <h1>How We Do It?</h1>
-                            <p>At NNM Amritkal Fund, we follow a comprehensive approach to investment management. Our process involves meticulous planning, thorough research, and disciplined execution. We begin by analyzing market trends, identifying potential opportunities, and assessing risks. Our team of experts then crafts tailored investment strategies to optimize returns while mitigating risks. </p>
+                            <h1  data-aos='fade-up'  data-aos-delay="100">How We Do It?</h1>
+                            <p  data-aos='fade-up'  data-aos-delay="100">At NNM Amritkal Fund, we follow a comprehensive approach to investment management. Our process involves meticulous planning, thorough research, and disciplined execution. We begin by analyzing market trends, identifying potential opportunities, and assessing risks. Our team of experts then crafts tailored investment strategies to optimize returns while mitigating risks. </p>
                         </div>
                         <div className='col-lg-6 timeline-heading-img'>
-                            <img src='/process.svg' />
+                            <img  data-aos='fade-up'  data-aos-delay="100" src='/process.svg' />
                         </div>
                     </div>
                 </div>
             </div>
 
             <div className='vertical-container'>
-                <h3 className='text-center text-white steps-heading'>Steps:</h3>
+                <h3 className='text-center text-white steps-heading'  data-aos='fade-up'  data-aos-delay="100">Steps:</h3>
                 <VerticalTimeline className='vertical-timeline' lineColor='white' layout='2-columns' >
                     <VerticalTimelineBox heading='SME Company Identification' paragraph=' Identification of growth industries and companies in each sector with quality products and strong financials indicating growth potential' icon='1' />
                     <VerticalTimelineBox heading='Due Diligence and Analysis  ' paragraph='Our plan is to invest early in right growth opportunity businesses with a track record of generating revenues and a sound plan for scalability which can yield outsized returns over time. Company Analysis include Fundamental and Technical Analysis. The companies are selected based on the feasibility, scalability and complete in-depth analysis of the company' icon='2' />

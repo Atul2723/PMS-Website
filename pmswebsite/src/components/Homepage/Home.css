@@ -1,14 +1,24 @@
 .pms-home{
-    min-height: 50vh;
-    background-color: var(--primary-color);
+    /* min-height: 50vh; */
+    /* background-color: var(--primary-cor); */
+    background:url('/wealthpublic.png');
+    background-size: cover;
     padding-top: 8%;
     padding-bottom: 2%;
+    background-position-y:100%;
+    min-height: 100vh;
+}
+.pms-container{
+    background: url('/funddetailsbg.jpg');
+    background-attachment: fixed;
+    background-size: 100%;
+    background-position-x: 80%;
 }
 .home-col{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 3%;
+    gap: 1%;
 }
 .home-img{
     display: flex;
@@ -19,19 +29,25 @@
 }
 
 .home-col h3{
-    font-size: 16px;
+    font-size: 18px;
     text-transform: uppercase;
     letter-spacing: 3px;
     color: var(--text-color);
+    /* background-color:yellow; */
+    /* padding: 2%; */
+    /* box-shadow:inset 1px 2px 5px black; */
+    margin-bottom: 2%;
+   
 }
 .home-col h1{
-    font-size: 45px;
+    font-size: 33px;
     /* letter-spacing: 2px; */
     /* word-spacing: 3px; */
     color:var(--text-color);
+    margin-bottom: 2%;
 }
 .home-col a{
-    width: 30%;
+    width: 50%;
     padding: 2% 3%;
     border: none;
     outline: none;
@@ -84,6 +100,10 @@
     font-size: 20px;
     padding-left: 3%;
 }
+.product-col ul strong{
+    font-family: 'unna';
+    font-size: 27px;
+}
 .product-col h1{
     font-size: 30px;
     padding-left: 5%;
@@ -108,6 +128,11 @@
     gap: 15px;  
     height: 40vh;
     flex-wrap: nowrap;
+}
+.company-col img{
+    width:80px ;
+    height: 70px;
+
 }
 .company-col:not(:last-child){
     border-right: 0.5px solid var(--paragraph-color);
@@ -148,7 +173,7 @@
 
 }
 .vision-icons{
-    font-size: 5rem;
+    font-size: 6rem;
     border-radius: 50px;
     color: var(--primary-color);
 }
@@ -163,8 +188,10 @@
 .pms-team{
     /* padding: 5% 0; */
     padding-bottom: 5%;
-    margin-top: 5%;
     /* background-color: #f8f9f9; */
+    background-color: white;
+    margin: 0 !important;
+    padding-top: 5%;
 }
 .team-row{
     display: flex;
@@ -246,6 +273,7 @@
 
 }
 .pms-about-us{
+   background-color: white;
     padding: 5% 0;
 }
 .about-us-row{
@@ -264,6 +292,22 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    position: relative;
+}
+.details-col h3{
+    position: relative;
+    margin-bottom: 2%;
+}
+.details-col h3::after{
+content: '';
+  position: absolute;
+  width: 10%;
+  height: 3px;
+  background-color: var(--primary-color);
+  top: 35px;
+  /* left: 45%; */
+  left: 0px;
+
 }
 .about-us-col h3{
     font-size: 18px;
@@ -284,7 +328,10 @@
 }
 .fund-details{
     padding: 5% 0;
-    background-color: #f9f9f9;
+    /* background-color: #f9f9f9; */
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.6));
+    color: white;
+
 }
 .fund-row{
     display: flex;
@@ -296,7 +343,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     row-gap: 40px;
     
 }
@@ -314,7 +361,14 @@
 .fund-left p{
     text-align: center;
     width: 60%;
-    color: var(--paragraph-color);
+    /* color: var(--paragraph-color); */
+    color: white;
+}
+.fund-details .section-heading p{
+    color: white;
+}
+.fund-details .section-heading::after{
+    background-color: white;
 }
 .fund-left h1{
     text-align: center;
@@ -322,7 +376,8 @@
 }
 .fund-icons{
     font-size: 60px;
-    color: var(--primary-color);
+    /* color: var(--primary-color); */
+    color: #ff2247;
 }
 .fund-btn{
     width: 12%;
@@ -397,14 +452,33 @@
     padding: 2% 0;
     background-color: var(--primary-color);
     color:white;
+    margin: 0 !important;
+
+}
+
+.why-choose-us-heading h1{
+    position: relative;
+    text-transform: uppercase !important;
+    font-size: 22px;
+    letter-spacing: 3px;
+
+}
+.why-choose-us h1::after{
+    content: '';
+    position: absolute;
+    width: 10%;
+    height: 3px;
+    background-color: white;
+    top: 70px;
+    left: 45%;
 
 }
 .chooseus-img img{
-  width: 90%;
+  width: 100%;
 }
 .chooseus-row{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 .chooseus-details{
@@ -412,14 +486,16 @@
     flex-direction: column;
     gap: 20px;
 }
-.chooseus-details h1{
+.why-choose-us h1{
     text-transform: capitalize;
+    padding-bottom: 1%;
+    padding-top: 2%;
 }
 .chooseus-details ul{
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 40px;
     /* background-color: #ffae42; */
     /* padding: 5% 0; */
     padding-top: 2%;
@@ -476,12 +552,13 @@
     }
     .home-col h1{
         font-size: 30px;
+        text-align: justify;
     }
     .home-col h3{
         font-size: 12px;
     }
     .home-col a{
-        width: 50%;
+        width: 70%;
         padding: 4%;
     }
     .home-col{
@@ -495,7 +572,7 @@
         display: none !important;
     }
     .pms-home{
-        padding-bottom: 10%;
+        padding-bottom: 20%;
     }
     .company-row{
         flex-direction: column;
@@ -516,6 +593,12 @@
     .pms-about-us{
         padding: 20% 0;
     }
+    .pms-about-section .section-heading p{
+        font-size: 14px;
+    }
+    .company-col p{
+        font-size: 14px;
+    }
     .about-us-row{
         flex-direction: column;
         padding: 0 5%;
@@ -525,6 +608,9 @@
     }
     .details-col h5{
         font-size: 20px;
+    }
+    .details-col p{
+        font-size: 14px;
     }
     .product-col{
         padding: 5% 0;
@@ -543,6 +629,13 @@
         padding: 0;
         padding-bottom: 10%;
         border: none;
+    }
+    .product-col ul strong{
+        font-size: 30px;
+    }
+    .product-col ul li{
+        font-size: 14px;
+
     }
     .vision-mission{
         padding: 20% 0;
@@ -567,7 +660,9 @@
     .vision-icons{
         font-size: 50px;
     }
-    
+    .vision-content p{
+        font-size: 14px;
+    }
     .fund-col{
         flex-direction: column;
         width: 100%;
@@ -577,6 +672,12 @@
     }
     .fund-left{
         width: 100%;
+    }
+    .fund-left p{
+        font-size: 14px;
+    }
+    .fund-left h1{
+        font-size: 30px;
     }
     .fund-btn{
         width: 40%;
@@ -596,6 +697,10 @@
         margin-top: 10%;
         padding-bottom: 20%;
     }
+    .chooseus-details ul li{
+        font-size: 14px;
+    }
+    
     .team-details{
         margin-top: 10%;
         padding: 0 7%;
@@ -604,8 +709,44 @@
         font-size: 15px;
     }
     .team-details p{
-        font-size: 12px;
+        font-size: 13px;
+       
 
+    }
+    .fund-details .section-heading::after , .pms-about-section .section-heading::after{
+        top: 70px;
+        width: 80px;
+        left:39%;
+    }
+    .why-choose-us-heading{
+        margin-top: 10%;
+    }
+    .why-choose-us-heading h1{
+        font-size: 20px;
+    }
+    .why-choose-us-heading h1::after{
+        width: 100px;
+        top: 70px;
+        left: 35%;
+    }
+    .pms-container{
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 350%;
+        background-attachment: fixed;
+    }
+    .product-col h1{
+        position: relative
+        ;
+    }
+    .product-col h1::after{
+        content: '';
+        position:absolute;
+        width: 100px;
+        height: 3px;
+        background-color: white;
+        left: 22%;
+        top: 95px;
     }
     
     

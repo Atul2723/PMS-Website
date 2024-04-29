@@ -115,11 +115,29 @@
     text-align: center;
     margin-top: 30px;
     padding-top: 20px;
-    border-top: 1px solid rgb(197, 197, 197);
+    border-top: 1px solid rgb(206, 206, 206);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 
 .footer .copyright p {
     font-size: 14px;
+    color: rgb(200, 200, 200);
+}
+.footer .copyright a{
+    color: white;
+}
+.logo-column p{
+    text-align:justify ;
+}
+@media screen and (max-width:1280px){
+    .disclaimer-details h4::after{
+        top: 35px;
+        width: 8%;
+    }
+
 }
 
 @media screen and (max-width:768px){
@@ -161,5 +179,12 @@
         height:3px;
         background-color: white;
     }
-    
+    .footer .copyright{
+        flex-direction: column;
+        gap: 7px;
+        margin-bottom: 5%;
+    }
+    .footer .copyright p{
+        font-size: 12px;
+    }
 }

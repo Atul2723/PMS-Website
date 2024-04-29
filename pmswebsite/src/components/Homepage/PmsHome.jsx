@@ -8,18 +8,18 @@ const PmsHome = ({heading , subHeading ,img , buttonText}) => {
             <div className='container'>
                 <div className='home-row row '>
                     <div className='col-lg-6 home-col'>
-                        <h3>
+                        <h3 data-aos='fade-up'>
                             {heading}
                         </h3>
-                        <h1>
+                        <h1 data-aos='fade-up'>
                             {subHeading}
                         </h1>
-                        <NavLink to={buttonText==='Explore More'?'/fund-details':'/contact-us'}>
+                        <NavLink data-aos='fade-up'  data-aos-delay="300" to={buttonText==='Explore More'?'/fund-details':'/contact-us'}>
                             {buttonText}
                         </NavLink>
                     </div>
                     <div className='col-lg-6 home-img  '>
-                        <img src={img} alt="NNM Securities Pvt Ltd" />
+                        <img data-aos='fade-up'  src={img} alt="NNM Securities Pvt Ltd" />
                     </div>
                 </div>
             </div>

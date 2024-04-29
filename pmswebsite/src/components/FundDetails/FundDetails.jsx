@@ -3,7 +3,7 @@ import './FundDetails.css'
 import { NavLink } from 'react-router-dom'
 import { IoRemoveOutline } from "react-icons/io5";
 import { MdArrowCircleLeft, MdArrowCircleRight } from 'react-icons/md';
-import { BiRightArrowCircle } from 'react-icons/bi';
+
 import PmsHome from '../Homepage/PmsHome';
 
 const FundDetails = () => {
@@ -16,18 +16,17 @@ const FundDetails = () => {
 
     return (
         <>
+            <div className='fund-details-home'>
+                <PmsHome heading='Fund Details' subHeading='Empowering Investors with a Comprehensive Portfolio of Financial Services' img='/funddetails.png' buttonText='Contact Us' />
+            </div>
             <div className='section-fund-details'>
-                <div className='sec-fund-header'>
-                   
-                  <PmsHome heading='Fund Details' subHeading='Empowering Investors with a Comprehensive Portfolio of Financial Services' img='/funddetails.png' buttonText='Contact Us'/>
-                </div>
-                <div className='section-heading'>
-                    <h1>Fund Details</h1>
-                    <p>We Offer An Unparalleled Investment Opportunity Designed To Maximize Returns And Foster Long-Term Growth</p>
+                <div className='fund-details-heading'>
+                    <h1 data-aos='fade-up'  data-aos-delay="100">Fund Details</h1>
+                    <p data-aos='fade-up'  data-aos-delay="100">We Offer An Unparalleled Investment Opportunity Designed To Maximize Returns And Foster Long-Term Growth</p>
                 </div>
                 <div className='row sec-fund-row'>
                     <div className='col-lg-4 sec-fund-col'>
-                        <ul>
+                        <ul  data-aos='fade-up'  data-aos-delay="100">
                             <li>
                                 <IoRemoveOutline className={`${isActive === 'Investment-Details' ? 'fund-icon-active' : ''} fund-icon`} /><NavLink className={isActive === 'Investment-Details' ? 'fund-active' : ''} onClick={() => handleClickSection("Investment-Details")} >Investment Details</NavLink>
                             </li>
@@ -93,14 +92,17 @@ const FundDetails = () => {
 
             <div className='pms-risks'>
                 <div className='container'>
+                    <div className='risk-heading'>
+                        <h3  data-aos='fade-up'  data-aos-delay="100">Risks Factors</h3>
+                    </div>
                     <div className='row risk-row'>
                         <div className='col-lg-5 risk-col-img'>
-                            <img src='/risksvg.svg' />
+                            <img  data-aos='fade-up'  data-aos-delay="100" src='/risksvg.svg' />
 
                         </div>
                         <div className='col-lg-7 risk-col'>
-                            <h3>Risks</h3>
-                            <ul>
+
+                            <ul data-aos='fade-up' data-aos-delay="100">
                                 <li><MdArrowCircleRight className='desc-icon' />SMEs are typically very early in their lifecycles when they hit the primary markets. While this appears to give investors an early opportunity to pick potential multibaggers in SME IPOs, it also comes with the risk of losing money if the fundamentals aren't strong or the business deteriorates in the future. Needless to say, this is a dangerous combination that has a two-edged sword. </li>
                                 <li><MdArrowCircleRight className='desc-icon' />SME IPOs have faced liquidity challenges, but several of these share-sales outperformed mainboard listings over a period.</li>
                                 <li><MdArrowCircleRight className='desc-icon' />There are always risks in applying to IPOs, and you should always research the company prior to applying to their SME IPO. However, SME IPOs can provide good returns if they have high growth potential and are fundamentally strong.</li>
@@ -118,7 +120,7 @@ export default FundDetails
 
 function FundDescription({ heading, paragraph }) {
     return (<>
-        <div>
+        <div  data-aos='fade-up'  data-aos-delay="100">
             <h1><MdArrowCircleRight className='desc-icon' />{heading}</h1>
             <p>{paragraph}</p>
         </div>

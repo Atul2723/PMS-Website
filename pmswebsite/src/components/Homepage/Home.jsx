@@ -17,7 +17,8 @@ const Home = () => {
 
     return (
         <>
-             <Suspense fallback={<div>Loading...</div>}>
+            <div className='pms-container'>
+            <Suspense fallback={<div>Loading...</div>}>
                 <LazyPmsHomeSlider />
                 <LazyPmsNNMHouse />
                 <LazyPmsAboutUs />
@@ -25,9 +26,9 @@ const Home = () => {
                 <LazyPmsVisionMission />
                 <LazyFund />
                 <LazyWhyChooseUs />
-                <LazyHowWeDoIt />
                 <LazyTeam />
             </Suspense>
+            </div>
 
         </>
     );

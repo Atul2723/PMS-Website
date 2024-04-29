@@ -10,7 +10,7 @@ const BewChart = () => {
         { year: 'Aug 2022',  price:  965.00},
         { year: 'Jan 2023',  price: 621.50},
         { year: 'Jun 2023',  price: 1200.00 },
-        { year: '  ',  price: 1728.25},
+        // { year: '  ',  price: 1728.25},
         { year: 'Nov 2023',  price: 1610.25 },
         { year: ' ', price: 1595.00},
     ],

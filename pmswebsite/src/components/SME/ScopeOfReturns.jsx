@@ -61,9 +61,9 @@ const ScopeOfReturns = () => {
   return (
     <>
       <div className='scope-of-returns'>
-        <div className='chart-section-header section-heading'>
-          <h1>Scope Of Returns</h1>
-          <p>SME Stocks Emerge as Prime Candidates for Astute Investors, Offering Substantial Returns and Growth Potential.</p>
+        <div className='scope-of-returns-header'>
+          <h1 data-aos='fade-up'  data-aos-delay="100">Scope Of Returns</h1>
+          <p data-aos='fade-up'  data-aos-delay="100">SME Stocks Emerge as Prime Candidates for Astute Investors, Offering Substantial Returns and Growth Potential.</p>
 
 
         </div>
@@ -71,9 +71,9 @@ const ScopeOfReturns = () => {
 
           <div className='row chart-row'>
             <div className='col-lg-6 chart-list-col'>
-              <h3>There has never been a better time to buy SME stocks than Now</h3>
+              <h3 data-aos='fade-up'  data-aos-delay="100">There has never been a better time to buy SME stocks than Now</h3>
 
-              <ul>
+              <ul data-aos='fade-up'  data-aos-delay="100">
                 <li><MdArrowCircleRight className='desc-icon' />Stocks listed on the SME platforms of BSE and NSE have already drawn deep pocketed investors because of the massive returns they have generated
                 </li>
                 <li><MdArrowCircleRight className='desc-icon' />Power of investment in SME and keeping faith:</li>
@@ -83,11 +83,11 @@ const ScopeOfReturns = () => {
               </ul>
 
             </div>
-            <div className='col-lg-6 charts-col'>
+            <div className='col-lg-6 charts-col ' data-aos='fade-up'  data-aos-delay="100">
               <ChartHeader heading='BSE SME IPO INDEX' />
 
               <div className='charts-line-content'>
-                <h3>CAGR: ~174.79%</h3>
+                <h3 >CAGR: ~174.79%</h3>
               </div>
               <div className='charts-container'>
                 <AgChartsReact options={chartOptions} />
@@ -96,26 +96,26 @@ const ScopeOfReturns = () => {
           </div>
 
           <div className='row sensex-row'>
-            <h1>5 Year Returns</h1>
-            <div className='col-lg-6 sensex-col'>
+            <h1 data-aos='fade-up'  data-aos-delay="100">5 Year Returns</h1>
+            <div className='col-lg-6 sensex-col' data-aos='fade-up'  data-aos-delay="100">
               <h3><strong>SME IPO :-</strong> 3073%</h3>
               <ChartHeader heading='S&P BSE SME IPO Index' />
-              <div className='charts-container'>
+              <div className='charts-container' data-aos='fade-up'  data-aos-delay="100">
                 <AreaChart />
               </div>
             </div>
             
-            <div className='col-lg-6 sensex-col'>
+            <div className='col-lg-6 sensex-col' data-aos='fade-up'  data-aos-delay="100">
               <h3><strong>SENSEX :-</strong> 98.64%</h3> 
               <ChartHeader heading='BSE SENSEX' />
-              <div className='charts-container'>
+              <div className='charts-container' data-aos='fade-up'  data-aos-delay="100">
                 <SensexChart />
               </div>
 
             </div>
           </div>
           <div className='sensex-content'>
-            <ul>
+            <ul data-aos='fade-up'  data-aos-delay="100">
               <li><MdArrowCircleRight className='desc-icon'/>An investment of Rs 1 Lakh into the Nifty 50 index a year ago would have yield Rs 1.21 Lakhs today. In contrast, the same investment in the S&P BSE SME IPO index would have yield Rs 2.24 Lakhs.</li>
               <li><MdArrowCircleRight className='desc-icon'/>Over the past 5 years, the S&P BSE SME IPO index grew almost 30 times, whereas the BSE Sensex grew just under 2 times.</li>
             </ul>

@@ -7,8 +7,8 @@ export const CaseStudyDetails = ({companyTitle , desc1 , desc2 , chart , Listing
             <div className='container'>
                 <div className='row case-study-row'>
                     <div className='col-lg-6 case-study-details'>
-                        <h1>{companyTitle}</h1>
-                        <ul>
+                        <h1 data-aos='fade-up'  data-aos-delay="100">{companyTitle}</h1>
+                        <ul data-aos='fade-up'  data-aos-delay="100">
                             <li><MdArrowCircleRight className='desc-icon' />{desc1} </li>
                             <li><MdArrowCircleRight className='desc-icon' />{desc2}</li>
                         </ul>
@@ -16,14 +16,19 @@ export const CaseStudyDetails = ({companyTitle , desc1 , desc2 , chart , Listing
 
                     </div>
                     <div className='col-lg-6 case-study-col'>
-                       <div className='charts-container'>
+                        {companyTitle === 'Ashapura Intimates Fashion Limited' ? (<>
+                         <div className='nnm-exit'>
+                            <p>NNM Exit</p>
+                         </div>
+                        </>):''}
+                       <div className='charts-container' data-aos='fade-up'  data-aos-delay="100">
                        {chart}
                        </div>
 
                     </div>
                    {
                     companyTitle !== 'Ashapura Intimates Fashion Limited' ?(<>
-                     <table className='table table-bordered'>
+                     <table className='table table-bordered' data-aos='fade-up'  data-aos-delay="100">
                             <thead>
                                 <th>Date of Listing</th>
                                 <th>{ListingDate}</th>

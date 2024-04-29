@@ -27,21 +27,30 @@
 
 .nav-elements ul li {
   margin-right: 30px;
+  transition: .3s all;
+  /* border: 1px solid black; */
+  text-align: center;
+
 }
 
 .nav-elements ul a {
   font-size: 16px;
-  font-weight: 400;
   text-decoration: none;
   color:var(--paragraph-color);
   transition: all 0.2s ease-in;
   padding: 10px 0px;
   margin: 0 10px;
+  transition: .3s all;
+  font-weight:700;
+  
+  
 }
 
 .nav-elements ul a:hover {
   color: var(--primary-color);
   box-shadow: inset 0px -3px 0px var(--primary-color);
+  font-weight: bold;
+
 }
 .navbar-scrolled .nav-elements ul a:hover{
   box-shadow: inset 0px -3px 0px black;
@@ -55,6 +64,7 @@
   color: var(--primary-color);
   /* font-weight: 600; */
   box-shadow: inset 0px -3px 0px var(--primary-color);
+  font-weight: bold;
 
 }
 .navbar-scrolled .nav-elements ul a.active{

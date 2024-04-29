@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { useState } from 'react'
 import './Navbar.css'
-import { NavLink } from 'react-router-dom'
+import { NavLink, useLocation } from 'react-router-dom'
 import { IoIosArrowDown } from "react-icons/io";
 // import logo from '../../assets/nnmlogo.png'
 import Hamburger from './Hamburger'
@@ -10,11 +10,17 @@ import Hamburger from './Hamburger'
 
 const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(false);
+  const location = useLocation();
 
 
   const handleShowNavbar = () => {
     setShowNavbar(!showNavbar);
   };
+  useEffect(() => {
+    setShowNavbar(false);
+  }, [location.pathname]);
+
+   
   return (
     <>
       <nav style={{ position: "fixed",zIndex:'20' , paddingLeft:'5%', paddingRight:"5%" }} className='navbar'>

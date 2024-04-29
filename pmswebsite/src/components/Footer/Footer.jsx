@@ -57,8 +57,9 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="copyright">
-        <p>&copy; {new Date().getFullYear()} nnmsecurties. All rights reserved.</p>
+      <div className="copyright d-flex">
+        <p>&copy; {new Date().getFullYear()} nnmsecurties. All rights reserved. </p>
+        <p>Designed & Developed By <NavLink to='https://cokaco.com'>Cokaco</NavLink> </p>
       </div>
     </footer>
     

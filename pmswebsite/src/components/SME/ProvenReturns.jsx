@@ -7,14 +7,14 @@ const ProvenReturns = () => {
     return (
         <>
             <div className='proven-returns'>
-                <div className='section-heading'>
-                    <h1>Proven Returns</h1>
-                    <p>Examples of the new breed of ace value investors investing in listed SME and SME IPO</p>
+                <div className='proven-returns-heading'>
+                    <h1 data-aos='fade-up'  data-aos-delay="100">Proven Returns</h1>
+                    <p data-aos='fade-up'  data-aos-delay="100">Examples of the new breed of ace value investors investing in listed SME and SME IPO</p>
                 </div>
                 <div className='container'>
                     <div className='row fund-table-row'>
                         <div className='col-lg-4 fund-table-details-col'>
-                            <ul>
+                            <ul data-aos='fade-up'  data-aos-delay="100">
                                 <li><MdArrowCircleRight className='desc-icon' />Small caps like Titan and Bata has created history in the last 20 to 22 years by creating multi-fold wealth for investors.</li>
                                 <li> <MdArrowCircleRight className='desc-icon' />Likewise good fundamentally strong SME companies are expected to create more wealth in the long term. </li>
                                 <li><MdArrowCircleRight className='desc-icon' />Interestingly, it is not only retail investors who are keen on these offerings</li>
@@ -22,7 +22,7 @@ const ProvenReturns = () => {
 
                         </div>
                         <div className='col-lg-8 fund-table-col'>
-                            <table className='table table-bordered'>
+                            <table data-aos='fade-up'  data-aos-delay="100" className='table table-bordered'>
                                 <thead>
                                     <th>Investor</th>
                                     <th>SME Company</th>
@@ -61,7 +61,7 @@ const ProvenReturns = () => {
                     </div>
                     <div className='jhun-row'>
                     <div className='col-lg-7 fund-table-col'>
-                            <table className='table table-bordered'>
+                            <table data-aos='fade-up'  data-aos-delay="100" className='table table-bordered'>
                                 <thead>
                                     <th>Company</th>
                                     <th>Market cap (entry)(INR Cr)</th>
@@ -92,8 +92,8 @@ const ProvenReturns = () => {
                             </table>
                         </div>
                         <div className='col-lg-5 fund-jhun-col'>
-                            <img src='/rakesh_jhunjhunwala.png'/>
-                            <ul>
+                            <img  data-aos='fade-up'  data-aos-delay="100" src='/rakesh_jhunjhunwala.png'/>
+                            <ul data-aos='fade-up'  data-aos-delay="100">
                                 <li><MdArrowCircleRight className='desc-icon' />The net worth of Rakesh Jhunjhunwala was approx. $5.8B at the time of his death, starting from just Rs 5,000 in 1985. </li>
                                 
                             </ul>

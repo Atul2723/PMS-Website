@@ -19,11 +19,11 @@ const CaseStudies = () => {
                 <div className='container'>
                     <div className='case-row'>
                         <div className='case-col col-lg-6'>
-                            <h1>Explore Success Stories from Leading Companies</h1>
-                            <p>Delve into our comprehensive case studies to discover the strategies and innovations driving growth and resilience in today's competitive landscape. Gain valuable insights into industry leaders and their journey towards sustainable success.</p>
+                            <h1 data-aos='fade-up'  data-aos-delay="100">Explore Success Stories from Leading Companies</h1>
+                            <p data-aos='fade-up'  data-aos-delay="100">Delve into our comprehensive case studies to discover the strategies and innovations driving growth and resilience in today's competitive landscape. Gain valuable insights into industry leaders and their journey towards sustainable success.</p>
                         </div>
                         <div className='case-col-img col-lg-6'>
-                            <img src='/casestudy.svg' />
+                            <img data-aos='fade-up'  data-aos-delay="100" src='/casestudy.svg' />
                         </div>
                     </div>
                 </div>
@@ -37,11 +37,11 @@ const CaseStudies = () => {
 
                         <div className='col-lg-6 comparison-col'>
                             <div className='comparison-header'>
-                                <h3>Overall</h3>
+                                <h3 data-aos='fade-up'  data-aos-delay="100">Overall</h3>
                             </div>
                             
                            <div className='comparison-box-wrapper'>
-                           <ComparisonBox number='49' title='Total Companies Listed in 2019'/>
+                           <ComparisonBox number='49' title='Total Number of Companies Listed in 2019'/>
                             <ComparisonBox number='58,74,100' title='Total Investment (INR)'/>
                             <ComparisonBox number='1,15,34,493' title='Value as of now (INR)'/>
                             <ComparisonBox number='25.2%' title='3 Year CAGR'/>
@@ -50,10 +50,10 @@ const CaseStudies = () => {
                         </div>
                         <div className='col-lg-6 comparison-col'>
                             <div className='comparison-header'>
-                                <h3>NNM Recommended</h3>
+                                <h3 data-aos='fade-up'  data-aos-delay="100">NNM Recommended</h3>
                             </div>
                             
-                           <div className='comparison-box-wrapper'>
+                           <div className='comparison-box-wrapper' data-aos='fade-up'  data-aos-delay="100">
                            <ComparisonBox number='29' title='Companies recommended by NNM for investment'/>
                             <ComparisonBox number='35,25,500' title='Total Investment (INR)'/>
                             <ComparisonBox number='90,85,625' title='Value as of now (INR)'/>
@@ -69,10 +69,10 @@ const CaseStudies = () => {
             </div>
             <div className='assumptions'>
                 <div className='container'>
-                    <h1>Assumptions</h1>
+                    <h1 data-aos='fade-up'  data-aos-delay="100">Assumptions</h1>
                     <hr style={{ width: '95%', color: 'white', height: '3px', opacity: '1' }} />
 
-                    <ul>
+                    <ul data-aos='fade-up'  data-aos-delay="100">
                         <li>It is assumed that the investor has applied for 1 lot at the time of the IPO.</li>
                         <li>The impact of split & bonus if any has not been taken into consideration while calculating the overall returns. Thus, if taken into calculations, it will increase the returns from those shown Below.</li>
                         <li> Calendar year 2019 IPO has been taken for calculation.</li>
@@ -82,7 +82,7 @@ const CaseStudies = () => {
             </div>
             <div className='study-companies'>
                 <div className='container'>
-                    <ul>
+                    <ul data-aos='fade-up'  data-aos-delay="100">
                         <li onClick={() => handleActiveCompany("ashapura")} className={activeCompany === 'ashapura' ? 'company-active' : ''}>Ashapura Intimates Fashion Limited</li>
                         <li onClick={() => handleActiveCompany("bb")} className={activeCompany === 'bb' ? 'company-active' : ''}>B & B Triplewal Containers Limited</li>
                         <li onClick={() => handleActiveCompany("bew")} className={activeCompany === 'bew' ? 'company-active' : ''}>BEW Engineering Limited</li>
@@ -97,7 +97,7 @@ const CaseStudies = () => {
                     <CaseStudyDetails companyTitle='B & B Triplewal Containers Limited' desc1='Incorporated in 2011, Bengaluru based B&B Triplewall Containers Limited is a company engaged in the business of manufacturing corrugated boxes and corrugated sheets.' desc2="It mainly caters to the packaging industry and has various packaging companies and MNC's as its clients. The company operates in domestic markets with its products being supplied on a PAN India basis." chart={<BBChart />} ListingDate='15-10-2018' IssuePrice1='36' IssuePrice2='19.99' CurrentPrice1='267' CurrentPrice2='548' />
                 </>) :
                     activeCompany === 'bew' ? (<>
-                        <CaseStudyDetails companyTitle='Bew Engineering Limited' desc1='Incorporated in 2011, BEW Engineering is engaged in the design and manufacturing of filters and dryers for the Chemicals Industry comprising of Pharmaceuticals – API, Agro Chemicals, and Specialty Chemicals.' desc2="BEW Engineering 's product portfolio includes a range of filtration, mixing and drying equipment, Sterile Applications, Intermediate Compounds, Fine Chemicals, Chemicals, Argo Chemicals, Pesticides, Insecticides, Dyes and Food Products." chart={<BewChart />} ListingDate='16-09-2021' IssuePrice1='58' IssuePrice2='3.97' CurrentPrice1='1600' CurrentPrice2='466' />
+                        <CaseStudyDetails companyTitle='BEW Engineering Limited' desc1='Incorporated in 2011, BEW Engineering is engaged in the design and manufacturing of filters and dryers for the Chemicals Industry comprising of Pharmaceuticals – API, Agro Chemicals, and Specialty Chemicals.' desc2="BEW Engineering 's product portfolio includes a range of filtration, mixing and drying equipment, Sterile Applications, Intermediate Compounds, Fine Chemicals, Chemicals, Argo Chemicals, Pesticides, Insecticides, Dyes and Food Products." chart={<BewChart />} ListingDate='16-09-2021' IssuePrice1='58' IssuePrice2='3.97' CurrentPrice1='1600' CurrentPrice2='466' />
                     </>) :
                         activeCompany === 'brands' ? (<>
                             <CaseStudyDetails companyTitle='Brands Concepts Limited' desc1='Brand Concepts Ltd specializes in the manufacturing of bags, backpacks & fashion accessories for the Indian & International markets.' desc2="The Company enters into franchise or trademark license agreements with reputed brands. Analyses the brand and other factors and creates a product design, a sample is manufactured, and on approval from the brand, it outsources its manufacturing activities to the manufacturers located in India and China (majorly)." chart={<BrandChart />} ListingDate='23-08-2018' IssuePrice1='45' IssuePrice2='12.62' CurrentPrice1='744' CurrentPrice2='788' />
@@ -134,7 +134,7 @@ function OverallData({ heading, firstData, listed, total, value, cagr }) {
 function ComparisonBox({number , title}) {
     return (
         <>
-            <div className='comparison-box'>
+            <div className='comparison-box' data-aos='fade-up'  data-aos-delay="100">
                 <h1>{number}</h1>
                 <p>{title}</p>
             </div>
