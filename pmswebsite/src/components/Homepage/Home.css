@@ -1,15 +1,14 @@
 .pms-home{
     /* min-height: 50vh; */
     /* background-color: var(--primary-cor); */
-    background:url('/wealthpublic.png');
+    background:url('/images/wealthpublic4.png');
     background-size: cover;
     padding-top: 8%;
     padding-bottom: 2%;
-    background-position-y:100%;
     min-height: 100vh;
 }
 .pms-container{
-    background: url('/funddetailsbg.jpg');
+    background: url('/images/funddetailsbg.jpg');
     background-attachment: fixed;
     background-size: 100%;
     background-position-x: 80%;
@@ -40,7 +39,7 @@
    
 }
 .home-col h1{
-    font-size: 33px;
+    font-size:35px;
     /* letter-spacing: 2px; */
     /* word-spacing: 3px; */
     color:var(--text-color);
@@ -63,7 +62,7 @@
 .pms-about-section{
     /* padding-bottom: 7%; */
     padding-top: 5%;
-    background: url('../../../public/pmscompanybackgrounc.png');
+    background: url('/images/pmscompanybackgrounc.png');
 }
 .pms-about-heading , .pms-about-heading p{
     text-transform: capitalize;
@@ -93,7 +92,6 @@
     display: flex;
     list-style: none;
     justify-content: space-around;
-    /* align-items: center; */
     border-left: 2px solid var(--text-color);
 }
 .product-col ul li{
@@ -148,7 +146,7 @@
     
 }
 .vision-mission{
-    background: url('../../../public/visionbg.png');
+    background: url('/images/visionbg.png');
     background-size: cover;
     padding-top: 4%;
     padding-bottom: 2%;
@@ -545,7 +543,7 @@ content: '';
     color: white;
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:900px) {
     .home-col{
         padding: 35% 7%;
         padding-bottom: 20%;
@@ -593,6 +591,7 @@ content: '';
     .pms-about-us{
         padding: 20% 0;
     }
+    
     .pms-about-section .section-heading p{
         font-size: 14px;
     }

@@ -24,7 +24,7 @@ const Footer = () => {
         <div className="column logo-column">
           {/* <h4>Disclaimer</h4>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed malesuada faucibus ex nec ultricies.</p> */}
-          <img src='/nnmlogo.png'/>
+          <img src='/images/nnmlogo.png'/>
           <p> At NNM, we believe in fostering long-term relationships built on trust, transparency, and mutual success. <em>Discover the difference with NNM today !!</em></p>
         </div>
         <div className="column">

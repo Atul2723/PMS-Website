@@ -11,7 +11,7 @@ const Sme = () => {
                 <div className='container'>
                     <div className='row sme-row'>
                         <div className='col-lg-6 sme-img'>
-                            <img src='/smesvg.svg'  data-aos='fade-up'  data-aos-delay="100"/>
+                            <img src='/images/smesvg.svg'  data-aos='fade-up'  data-aos-delay="100"/>
                         </div>
                         <div className='col-lg-6 sme-details'>
                             <h1  data-aos='fade-up'  data-aos-delay="100">What Is An SME IPO ?</h1>
@@ -45,7 +45,7 @@ const Sme = () => {
 
                         </div>
                         <div className='col-lg-6 importance-col-img'>
-                            <img data-aos='fade-up'  data-aos-delay="100" src='/smeimportance.svg' />
+                            <img data-aos='fade-up'  data-aos-delay="100" src='/images/smeimportance.svg' />
 
                         </div>
                     </div>

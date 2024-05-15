@@ -148,7 +148,11 @@
   color: white;
 }
 
-@media (max-width: 1168px) {
+@media screen {
+  
+  
+}
+@media screen and (max-width: 1168px) {
   #main-links {
     padding-left: 20px;
   }

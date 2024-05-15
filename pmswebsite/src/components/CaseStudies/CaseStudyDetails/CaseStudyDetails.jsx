@@ -33,7 +33,7 @@ export const CaseStudyDetails = ({companyTitle , desc1 , desc2 , chart , Listing
                                 <th>Date of Listing</th>
                                 <th>{ListingDate}</th>
                                 <th>Current Date</th>
-                                <th>14-02-2024</th>
+                                <th>18-04-2024</th>
                             </thead>
                             <tbody>
                                 <tr>

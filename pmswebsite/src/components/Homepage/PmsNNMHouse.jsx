@@ -16,7 +16,7 @@ const PmsNNMHouse = () => {
                     <div className='row company-row' data-aos='fade-up'  data-aos-delay="100">
                         <div className='col-lg-4 company-col'>
                             {/* <GiMoneyStack className='company-icon' /> */}
-                            <img src='/nnm_tab_logo.png'/>
+                            <img src='/images/nnm_tab_logo.png'/>
                             <h3>NNM Securities Private
                                 <br />Limited</h3>
                             <p>This is our flagship company
@@ -28,7 +28,7 @@ const PmsNNMHouse = () => {
                         </div>
                         <div className='col-lg-4 company-col'>
                             {/* <RiMoneyCnyCircleFill className='company-icon' /> */}
-                            <img src='/nnm_tab_logo.png'/>
+                            <img src='/images/nnm_tab_logo.png'/>
                             <h3>NNM Investment And Wealth<br /> Advisory LLP</h3>
                             <p>Offers services such as Portfolio
                                 Management Services, Wealth
@@ -37,7 +37,7 @@ const PmsNNMHouse = () => {
                         </div>
                         <div className='col-lg-4 company-col'>
                             {/* <MdOutlineSupervisorAccount className='company-icon' /> */}
-                            <img src='/cokaco.png' style={{width:'120px',height:'70px'}}/>
+                            <img src='/images/cokaco.png' style={{width:'120px',height:'70px'}}/>
 
                             <h3>NNM NextGen Advisory<br /> Private Limited</h3>
                             <p>Engaged in providing Investment Banking

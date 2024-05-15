@@ -15,7 +15,7 @@ const PmsAboutUs = () => {
 
                         </div>
                         <div className='col-lg-6 about-us-col img-col'>
-                            <img data-aos='fade-up'  data-aos-delay="200" src='/aboutsvg.svg' />
+                            <img data-aos='fade-up'  data-aos-delay="200" src='/images/aboutsvg.svg' />
                         </div>
                     </div>
                 </div>

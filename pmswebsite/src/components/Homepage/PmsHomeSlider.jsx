@@ -40,12 +40,12 @@ const PmsHomeSlider = () => {
 
 
             <SwiperSlide className='swiper-slides '>
-                <PmsHome heading='Welcome to NNM Wealth Management' subHeading="Achieve your financial goals with personalized solutions tailored to your needs." img='/homeslide2.svg' buttonText='For a Consultation Contact Us'/>
+                <PmsHome heading='Welcome to NNM Wealth Management' subHeading="Achieve your financial goals with personalized solutions tailored to your needs." img='/images/homeslide2.svg' buttonText='For a Consultation Contact Us'/>
 
 
             </SwiperSlide>
             <SwiperSlide className='swiper-slides '>
-                <PmsHome heading='Make your Next Move The Best Move' subHeading='NNM Amritkaal Emerging Fund By NNM Securities Private Limited' img='/homesvg.svg' buttonText='Explore More'/>
+                <PmsHome heading='Make your Next Move The Best Move' subHeading='NNM Amritkaal Emerging Fund By NNM Securities Private Limited' img='/images/homesvg.svg' buttonText='Explore More'/>
 
 
             </SwiperSlide>

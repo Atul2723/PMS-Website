@@ -17,7 +17,7 @@ const FundDetails = () => {
     return (
         <>
             <div className='fund-details-home'>
-                <PmsHome heading='Fund Details' subHeading='Empowering Investors with a Comprehensive Portfolio of Financial Services' img='/funddetails.png' buttonText='Contact Us' />
+                <PmsHome heading='Fund Details' subHeading='Empowering Investors with a Comprehensive Portfolio of Financial Services' img='/images/funddetails.png' buttonText='Contact Us' />
             </div>
             <div className='section-fund-details'>
                 <div className='fund-details-heading'>
@@ -97,7 +97,7 @@ const FundDetails = () => {
                     </div>
                     <div className='row risk-row'>
                         <div className='col-lg-5 risk-col-img'>
-                            <img  data-aos='fade-up'  data-aos-delay="100" src='/risksvg.svg' />
+                            <img  data-aos='fade-up'  data-aos-delay="100" src='/images/risksvg.svg' />
 
                         </div>
                         <div className='col-lg-7 risk-col'>

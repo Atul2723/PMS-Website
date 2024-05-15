@@ -11,7 +11,7 @@ const PmsVisionMission = () => {
                 <div className='container'>
                     <div className='row vision-row'>
                         <div className='col-lg-6 vision-col'>
-                            <img src='/visionsvg.svg' alt="Vision"  data-aos='fade-up'  data-aos-delay="100"/>
+                            <img src='/images/visionsvg.svg' alt="Vision"  data-aos='fade-up'  data-aos-delay="100"/>
                         </div>
                         <div className='col-lg-6 vision-col'>
                             <VisionSection

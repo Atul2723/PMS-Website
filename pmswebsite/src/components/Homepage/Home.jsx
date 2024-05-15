@@ -1,33 +1,27 @@
-import React, { Suspense } from 'react';
+import React from 'react';
 import './Home.css';
-
-const LazyFund = React.lazy(() => import('./Fund'));
-const LazyWhyChooseUs = React.lazy(() => import('./WhyChooseUs'));
-const LazyHowWeDoIt = React.lazy(() => import('./HowWeDoIt'));
-const LazyTeam = React.lazy(() => import('./Team'));
-
-const LazyPmsHomeSlider = React.lazy(() => import('./PmsHomeSlider'));
-const LazyPmsNNMHouse = React.lazy(() => import('./PmsNNMHouse'));
-const LazyPmsAboutUs = React.lazy(() => import('./PmsAboutUs'));
-const LazyPmsKeyHighlights = React.lazy(() => import('./PmsKeyHighlights'));
-const LazyPmsVisionMission = React.lazy(() => import('./PmsVisionMission'));
-
+import PmsHomeSlider from './PmsHomeSlider';
+import PmsNNMHouse from './PmsNNMHouse';
+import PmsAboutUs from './PmsAboutUs';
+import PmsKeyHighlights from './PmsKeyHighlights';
+import PmsVisionMission from './PmsVisionMission';
+import Fund from './Fund';
+import WhyChooseUs from './WhyChooseUs';
+import Team from './Team';
 
 const Home = () => {
 
     return (
         <>
             <div className='pms-container'>
-            <Suspense fallback={<div>Loading...</div>}>
-                <LazyPmsHomeSlider />
-                <LazyPmsNNMHouse />
-                <LazyPmsAboutUs />
-                <LazyPmsKeyHighlights />
-                <LazyPmsVisionMission />
-                <LazyFund />
-                <LazyWhyChooseUs />
-                <LazyTeam />
-            </Suspense>
+                <PmsHomeSlider/>
+                <PmsNNMHouse/>
+                <PmsAboutUs/>
+                <PmsKeyHighlights/>
+                <PmsVisionMission/>
+                <Fund/>
+                <WhyChooseUs/>
+                <Team/>
             </div>
 
         </>

@@ -2,8 +2,6 @@ import React, { useEffect } from 'react'
 import { useState } from 'react'
 import './Navbar.css'
 import { NavLink, useLocation } from 'react-router-dom'
-import { IoIosArrowDown } from "react-icons/io";
-// import logo from '../../assets/nnmlogo.png'
 import Hamburger from './Hamburger'
 
 
@@ -23,10 +21,10 @@ const Navbar = () => {
    
   return (
     <>
-      <nav style={{ position: "fixed",zIndex:'20' , paddingLeft:'5%', paddingRight:"5%" }} className='navbar'>
+      <nav style={{ position: "fixed",zIndex:'20' , paddingLeft:'2%', paddingRight:"1%"}} className='navbar'>
         <div className="container-fluid">
           <div className="logo">
-            <img src='/nnmlogo.png'/> 
+            <img src='/images/nnmlogo.png'/> 
           </div>
           <div className="menu-icon" onClick={handleShowNavbar}>
             <Hamburger />
@@ -56,6 +54,9 @@ const Navbar = () => {
  
               <li>
               <NavLink to="/case-studies">Case Studies</NavLink>
+              </li>
+              <li>
+              <NavLink to="/blog">Blogs</NavLink>
               </li>
               
               <li id='login-nav-btn'>

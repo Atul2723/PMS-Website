@@ -24,7 +24,7 @@ const WhyChooseUs = () => {
 
                         </div>
                         <div className='col-lg-4 chooseus-col chooseus-img'>
-                            <img src='/whyus.png' data-aos='fade-up'  data-aos-delay="100" />
+                            <img src='/images/whyus.png' data-aos='fade-up'  data-aos-delay="100" />
 
                         </div>
                         <div className='col-lg-4 chooseus-col chooseus-details '>

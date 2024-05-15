@@ -2,6 +2,8 @@
     
     padding: 5%;
     background-color: var(--primary-color);
+    
+
 }
 .vertical-timeline-element-content p {
     color: rgb(98, 98, 98);
@@ -24,6 +26,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 20%;
 
 }
 .timeline-heading-img{
@@ -49,21 +52,28 @@
 .steps-heading{
     text-transform: uppercase;
     letter-spacing: 5px;
-    margin-bottom:2%;
+    margin-bottom:5%;
     position: relative;
-
+    text-align: center;
 }
+
 
 .steps-heading::after{
     content: '';
     position: absolute;
     width: 75px;
     height: 3px;
-    background-color: white;
-    top: 40px;
+    background-color: black;
+    top: 60px;
     left: 47%;;
 }
+.stack-wrapper{
+    margin-top: -350px;
+}
 @media screen and (max-width:768px) {
+    .timeline-heading-row{
+        padding-bottom: 300px;
+    }
     .timeline-heading{
         padding: 0;
         padding: 0 4%;
@@ -86,6 +96,9 @@
     .steps-heading::after{
         top: 80px;
         left: 37%;
+    }
+    .vertical-container{
+        padding-bottom: 15%;
     }
     
 }

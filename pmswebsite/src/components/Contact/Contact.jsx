@@ -33,7 +33,7 @@ const Contact = () => {
         <div className='container'>
           <div className='row contact-row'>
             <div className='col-lg-6 contact-img'>
-              <img src='/contactsvg.svg' data-aos='fade-up'  data-aos-delay="100"/>
+              <img src='/images/contactsvg.svg' data-aos='fade-up'  data-aos-delay="100"/>
             </div>
             <div className='col-lg-6 contact-details' data-aos='fade-up'  data-aos-delay="100">
               {/* <ContactForm /> */}
@@ -82,7 +82,7 @@ const Contact = () => {
                         <p> nikunj@nnmsecurties.com</p></div>
                     </li>
                   </ul>
-                  <img src='/map.svg' />
+                  <img src='/images/map.svg' />
                 </div>
               </ul>
 

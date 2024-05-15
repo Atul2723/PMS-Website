@@ -2,7 +2,7 @@
   "name": "pmswebsite",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://nnmwealth.com/",
+  "homepage": "https://nnmwealth.com/#",
   "type": "module",
   "scripts": {
     "dev": "vite",

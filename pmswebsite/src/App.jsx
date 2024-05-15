@@ -5,6 +5,10 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Spinner from './components/Contact/Spinner';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Blog from './components/Blog/Blog';
+import BlogDetails from './components/Blog/BlogDetails'
+import blogsData from './components/Blog/blogs'
+import Error from './components/Error/Error';
 
 
 // Lazy-loaded components
@@ -39,7 +43,10 @@ const App = () => {
               <Route path='/sme' element={<Sme/>}/>
               <Route path='/case-studies' element={<CaseStudies/>}/>
               <Route path='/how-we-do-it' element={<HowWeDoIt/>}/>
+              <Route path='/blog' element={<Blog blogs={blogsData} />} />
+              <Route path="/blog/:id" element={<BlogDetails blogs={blogsData} />} />
               <Route path='/contact-us' element={<Contact/>}/>
+              <Route path='*' element={<Error/>}/>
             </Routes>
             <Footer/>
           </React.Suspense>
